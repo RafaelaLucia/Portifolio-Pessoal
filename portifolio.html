@@ -557,15 +557,15 @@
                     </div>
                 </div>
 
-                <form action="" class="contact__form grid">
+                <form action="" class="contact__form grid" id="contact-form">
                     <div class="contact__inputs grid">
                         <div class="contact__content">
                             <label for="" class="contact__label">Nome</label>
-                            <input type="text" class="contact__input">
+                            <input type="text" required class="contact__input">
                         </div>
                         <div class="contact__content">
                             <label for="" class="contact__label">Email</label>
-                            <input type="email" class="contact__input">
+                            <input type="email" id="email" name="email" required class="contact__input">
                         </div>
                     </div>
                     <div class="contact__content">
@@ -578,10 +578,10 @@
                     </div>
 
                     <div>
-                        <a href="#" class="button button--flex">
+                        <button type="submit" class="button button--flex">
                             Enviar Mensagem
                             <i class="uil uil-navigator button__icon"></i>
-                        </a>
+                          </button>
                     </div>
                 </form>
             </div>

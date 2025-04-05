@@ -107,3 +107,14 @@ function scrollActive(){
     })
 }
 window.addEventListener('scroll', scrollActive)
+
+/*==================== VALIDANDO SE É UM EMAIL ====================*/
+
+document.getElementById("contact-form").addEventListener("submit", function(e) {
+    const email = document.getElementById("email").value;
+
+    if (!email.includes("@") || !email.endsWith(".com")) {
+      alert("Por favor, insira um e-mail válido");
+      e.preventDefault(); 
+    }
+  });
